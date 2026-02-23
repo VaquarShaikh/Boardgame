@@ -20,7 +20,6 @@ WORKDIR /app
 
 # Copy built jar from build stage
 COPY --from=build /app/target/*.jar app.jar
-
 # Expose app port
 EXPOSE 8080
 
